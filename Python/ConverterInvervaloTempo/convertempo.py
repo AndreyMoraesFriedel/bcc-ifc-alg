@@ -1,0 +1,10 @@
+# Obter quantidade de minutos (tempoEmMinutos)
+tempoEmMinutos = float(input(""))
+# Calcular as quantidade de horas (qhoras = int(tempoEmMinutos // 60))
+qhoras = int(tempoEmMinutos // 60)
+# Calcular os quantidade de minutos (qminutos = int(tempoEmMinutos - (60 * qhoras)))
+qminutos = int(tempoEmMinutos - (60 * qhoras))
+# Calcular a quantidade de segundos (qsegundos = int((tempoEmMinutos - ((qhoras * 60) + qminutos)) * 100))
+qsegundos = int((tempoEmMinutos - ((qhoras * 60) + qminutos)) * 100)
+# Mostrar tempo em horas, minutos e segundos
+print(f"{qhoras}h {qminutos}m {qsegundos}s")
